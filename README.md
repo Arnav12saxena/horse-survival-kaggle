@@ -224,8 +224,7 @@ horse-survival-kaggle/
 │
 ├── results/
 │ ├── feature_importance.png
-│ ├── cv_scores.png
-│ └── confusion_matrix.png (optional)
+│ └── cv_scores.png
 │
 └── README.md
 ```
