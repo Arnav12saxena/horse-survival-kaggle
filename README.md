@@ -211,6 +211,7 @@ This submission achieved:
 
 ## 🗂 Project Structure
 
+```
 horse-survival-kaggle/
 │── explore.py
 │── model.py
@@ -227,6 +228,7 @@ horse-survival-kaggle/
 │ └── confusion_matrix.png (optional)
 │
 └── README.md
+```
 
 ---
 
