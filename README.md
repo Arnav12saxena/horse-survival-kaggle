@@ -12,8 +12,6 @@ This model ranked **1st on both the public and private leaderboards**.
 | **Public LB (20%)** | **0.8475** | 🥇 1st |
 | **Private LB (80%)** | **0.7742** | 🥇 1st |
 
-Outperformed all teams including senior students and experienced participants.
-
 ---
 
 ## 📌 Problem Overview
