@@ -213,7 +213,6 @@ This submission achieved:
 
 ```
 horse-survival-kaggle/
-│── explore.py
 │── model.py
 │── train.csv
 │── test.csv
