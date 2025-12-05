@@ -104,8 +104,6 @@ pulse * respiratory_rate
 
 ### **6. Convert categorical features to strings for encoding**
 
-This allows OrdinalEncoder to handle unseen values safely.
-
 ---
 
 ## 🏗 Encoding Categorical Features
@@ -113,8 +111,6 @@ This allows OrdinalEncoder to handle unseen values safely.
 Used **OrdinalEncoder**, with:
 - `handle_unknown='use_encoded_value'`
 - `unknown_value=-1`
-
-So the model does NOT crash on new categories in test data.
 
 ---
 
@@ -127,7 +123,7 @@ LightGBM was chosen because:
 - Very fast with high accuracy  
 
 ### **Objective**
-objective = 'multiclass'
+objective = 'multiclass'  
 num_class = 3
 
 ### **Evaluation Metric**
@@ -171,13 +167,14 @@ Used **5-Fold Stratified K-Fold** to maintain class balance.
 
 📌 **Mean CV Micro-F1:** **0.7536**
 
-You generated this visualization → `cv_scores.png`
+### 📉 CV Visualization  
+![Cross Validation Scores](results/cv_scores.png)
 
 ---
 
 ## 📈 Feature Importance
 
-The features contributing most to the model:
+Most important model features:
 
 | Feature | Importance |
 |---------|------------|
@@ -187,9 +184,8 @@ The features contributing most to the model:
 | packed_cell_volume | 457.4 |
 | pulse | 413.4 |
 
-Visualization file saved as:
-
-👉 `feature_importance.png`
+### 📊 Feature Importance Plot  
+![Feature Importance](results/feature_importance.png)
 
 ---
 
@@ -232,11 +228,11 @@ horse-survival-kaggle/
 
 ## 🚀 Future Improvements
 
-- Add SHAP values for deeper interpretability  
-- Try CatBoost for categorical handling  
-- Try XGBoost & ensemble models  
-- Apply advanced hyperparameter sweeps  
-- Explore automatic feature selection  
+- Add SHAP values  
+- Try CatBoost  
+- Try XGBoost + ensembling  
+- Automatic feature selection  
+- Bayesian hyperparameter sweeps  
 
 ---
 
@@ -245,6 +241,3 @@ horse-survival-kaggle/
 **Arnav Saxena**  
 🔗 LinkedIn: https://www.linkedin.com/in/arnav-saxena-a9a217367  
 📧 Email: **arnav12saxena@gmail.com**
-
----
-
